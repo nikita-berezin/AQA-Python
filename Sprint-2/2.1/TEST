@@ -1,5 +1,4 @@
-while True:
-    word = input()          # 1. Считываем слово
-    if word == 'КОНЕЦ':     # 2. Если это стоп-слово...
-        break               # ...полностью прерываем цикл
-    print(word)             # 3. Если не стоп-слово, выводим его
+for i in range(8):
+    for j in range(i + 1):
+        print('*', end='')
+    print()
