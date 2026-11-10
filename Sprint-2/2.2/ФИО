@@ -1,0 +1,9 @@
+n = input()  # Имя
+m = input() # Фамилия
+s = input() # Отчесвто
+for i in range(1):
+    print(m[i], end = '')
+for j in range(1):
+    print(n[i], end = '')
+for l in range(1):
+    print(s[i])
