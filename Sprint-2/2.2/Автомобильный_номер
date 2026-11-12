@@ -1,0 +1,15 @@
+n = input()
+if len(n) in (9, 10):    
+    if (
+        n[0] in "АВЕКМНОРСТУХ"
+        and n[4] in "АВЕКМНОРСТУХ"
+        and n[5] in "АВЕКМНОРСТУХ"
+        and n[1:4].isdigit()
+        and n[6] == '_'
+        and n[7:].isdigit()
+    ):
+        print("YES")
+    else:
+        print('NO')
+else:
+    print('NO')
