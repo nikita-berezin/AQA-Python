@@ -1,0 +1,7 @@
+n = int(input())
+for i in range(1, n + 1):
+    text = input()
+    if text == text.isspace() or text == "":
+        print(f"{i}: COMMENT SHOULD BE DELETED")
+    else:
+        print(f"{i}: {text}")
