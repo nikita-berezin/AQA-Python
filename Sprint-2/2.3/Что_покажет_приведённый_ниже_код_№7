@@ -1,0 +1,3 @@
+friends = ['Chandler', 'Ross', 'Phoebe', 'Rachel']
+friends[4] = 'Emily'
+print(friends)
