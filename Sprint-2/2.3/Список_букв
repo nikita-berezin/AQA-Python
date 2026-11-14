@@ -1,0 +1,3 @@
+n = int(input())
+a = "abcdefghijklmnopqrstuvwxyz"
+print(list(a[:n]))

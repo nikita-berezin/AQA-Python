@@ -1,0 +1,4 @@
+date = input()
+eur = input()
+cny = input()
+print(f'На {date}: 1€ = {eur}₽, 1¥ = {cny}₽')

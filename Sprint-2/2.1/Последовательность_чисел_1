@@ -1,0 +1,11 @@
+try:
+    m = int(input())
+    n = int(input())
+except ValueError:
+    print("Введено не число")
+else:
+    if m > n:
+        print(f"Число {m} больше числа {n}")
+    else:
+        for i in range(m, n + 1):
+            print(i)
