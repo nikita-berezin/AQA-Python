@@ -1,0 +1,5 @@
+n = list(map(int, input().split()))
+a = n.index(min(n))
+b = n.index(max(n))
+n[a], n[b] = n[b], n[a]
+print(*n)

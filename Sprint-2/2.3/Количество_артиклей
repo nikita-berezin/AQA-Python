@@ -1,0 +1,3 @@
+text = input().lower().split()
+# a = text.count('a')
+print('Общее количесвто артиклей:', text.count('a') + text.count('an') + text.count('the'))
