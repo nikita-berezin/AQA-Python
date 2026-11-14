@@ -1,0 +1,4 @@
+c = []
+a = c.extend(input()) # Строка
+b = input()  # Разделитель между симвлоами строки a
+print(b.join(c))
