@@ -1,0 +1,39 @@
+dict1 = [
+    {
+        "number_course": "CS101",
+        "classroom": "3004",
+        "name_teacher": "Хайнс",
+        "time": "8:00",
+    },
+    {
+        "number_course": "CS102",
+        "classroom": "4501",
+        "name_teacher": "Альварадо",
+        "time": "9:00",
+    },
+    {
+        "number_course": "CS103",
+        "classroom": "6755",
+        "name_teacher": "Рич",
+        "time": "10:00",
+    },
+    {
+        "number_course": "NT110",
+        "classroom": "1244",
+        "name_teacher": "Берк",
+        "time": "11:00",
+    },
+    {
+        "number_course": "CM241",
+        "classroom": "1411",
+        "name_teacher": "Ли",
+        "time": "13:00",
+    },
+]
+
+search_course = input()
+for course in dict1:
+    if course["number_course"] == search_course:
+        print(
+            f'{course["number_course"]}: {course["classroom"]}, {course["name_teacher"]}, {course["time"]}'
+        )

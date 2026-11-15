@@ -1,0 +1,17 @@
+text = "coat pencil guy tree tree pause power sand apple song taxi tree coat coat pause pause".split()
+dict1 = {}
+for word in text:
+    if word in dict1:
+        dict1[word] += 1
+    else:
+        dict1[word] = 1
+
+max_count = max(dict1.values())
+
+set1 = []
+
+for word, count in dict1.items():
+    if count == max_count:
+        set1.append(word)
+set1.sort()
+print(set1[0])
