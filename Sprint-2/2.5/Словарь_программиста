@@ -1,0 +1,13 @@
+n = int(input())
+dict_dev = {}
+answer = []
+for i in range(n):
+    text = input()
+    key, value = text.split(": ", 1)
+    dict_dev[key.lower().strip()] = value
+m = int(input())
+for j in range(m):
+    m = input().lower()
+    a = dict_dev.setdefault(m, "Не найдено")
+    answer.append(a)
+print("\n".join(answer))

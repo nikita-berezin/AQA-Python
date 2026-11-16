@@ -1,0 +1,21 @@
+n = int(input())
+
+dict1 = {}
+
+for i in range(n):
+    numbers, name = input().lower().split()
+
+    if name not in dict1:
+        dict1[name] = []
+
+    dict1[name].append(numbers)
+
+m = int(input())
+
+for j in range(m):
+    query_name = input().lower()
+
+    if query_name in dict1:
+        print(" ".join(dict1[query_name]))
+    else:
+        print("абонент не найден")

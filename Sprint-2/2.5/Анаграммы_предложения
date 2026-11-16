@@ -1,0 +1,14 @@
+text1 = input().lower()
+text2 = input().lower()
+a = ' .,!?:;-'
+
+clean_text1 = [char for char in text1 if char not in a]
+clean_text2 = [char for char in text2 if char not in a]
+
+clean_text1.sort()
+clean_text2.sort()
+
+if clean_text1 == clean_text2:
+    print('YES')
+else:
+    print('NO')

@@ -1,0 +1,17 @@
+n = int(input())
+
+dict1 = {}
+
+for i in range(n):
+    a = input().split() 
+    country = a[0]
+    cities = a[1:]
+
+    for city in cities:
+        dict1[city] = country
+
+m = int(input())
+
+for j in range(m):
+    query_city = input()
+    print(dict1[query_city])
