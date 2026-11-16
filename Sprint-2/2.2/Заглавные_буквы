@@ -1,5 +1,8 @@
 name = input()
-if name == name.title():
+space = name.find(" ")
+a = name[:space]
+b = name[space + 1:]
+if a[0] == a[0].upper() and b[0] == b[0].upper():
     print("YES")
 else:
     print("NO")

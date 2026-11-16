@@ -1,5 +1,5 @@
 n = input()
-if n[0] == '@' and 5 <= len(n) <= 15:
+if n[0] == '@' and 5 <= len(n) <= 15 and n == n.lower():
     if n[1:].isalnum():
         print('Correct')
     else:
