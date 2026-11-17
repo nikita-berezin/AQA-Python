@@ -1,0 +1,18 @@
+def replace_homoglyphs(text):
+    homoglyphs = {
+        'e': 'е', 'y': 'у', 'o': 'о', 'p': 'р', 'a': 'а',
+        'm': 'м', 'B': 'В', 'ɵ': 'Ф', 'k': 'к', 'x': 'х',
+        'c': 'с', 'E': 'Е', 'T': 'Т', 'φ': 'Ф', 'И': 'И',
+        'H': 'Н', 'O': 'О', 'P': 'Р', 'A': 'А', 'H': 'Н',
+        'K': 'К', 'Ь': 'Ь', 'Й': 'Й', 'W': 'Ш', 'X': 'Х',
+        'C': 'С', 'B': 'В', 'M': 'М', 'Π': 'П', 'З': 'З',
+        'Г': 'Г', 'Ч': 'Ч'
+    }
+    
+    result = ""
+    for char in text:
+        result += homoglyphs.get(char, char)
+        
+    return result
+
+print(replace_homoglyphs("Mocквa")) 

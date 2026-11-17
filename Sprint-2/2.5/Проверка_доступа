@@ -1,0 +1,18 @@
+def is_access_allowed(ip_address, mode, ip_access_lists):
+    # Извлекаем списки из словаря
+    black_list = ip_access_lists['black list']
+    white_list = ip_access_lists['white list']
+    
+    # Режим 1: Разрешено всё, что не запрещено (проверяем черный список)
+    if mode == 1:
+        if ip_address not in black_list:
+            return "ДА"
+        else:
+            return "НЕТ"
+            
+    # Режим 2: Запрещено всё, что не разрешено (проверяем белый список)
+    elif mode == 2:
+        if ip_address in white_list:
+            return "ДА"
+        else:
+            return "НЕТ"

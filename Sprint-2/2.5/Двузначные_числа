@@ -1,0 +1,14 @@
+favorite_numbers = {
+    "scarlett": 41,
+    "den": 22,
+    "viktor": 321,
+    "lera": 777,
+    "mahad": 4,
+    "manny": 4,
+    "ken": 8423,
+    "borya": 12,
+}
+
+result = {i: j for i, j in favorite_numbers.items() if 9 < j < 100}
+
+print(result)

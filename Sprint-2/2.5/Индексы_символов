@@ -1,0 +1,12 @@
+text = input()  
+result = {}
+
+for i in range(len(text)):
+    char = text[i]
+    
+    if char not in result:
+        result[char] = set()
+        
+    result[char].add(i)
+
+print(result) 
