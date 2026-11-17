@@ -1,0 +1,9 @@
+student_ids = ["X142", "B065", "X144"]
+
+student_grades = [88, 85, 62]
+
+student_names = ["Nikita Karpov", "Anna Chernova", "Ruslan Magarov"]
+
+result = {i: {j: k} for i, j, k in zip(student_ids, student_names, student_grades)}
+
+print(result)

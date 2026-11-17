@@ -1,0 +1,5 @@
+tuples = [(41, 52, 14), (12, 3, 4), (2, 77, 14), (-2, 4, -9)]
+
+result = {i[0]: i[1:] for i in tuples}
+
+print(result)

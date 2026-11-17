@@ -1,0 +1,5 @@
+words = ['кошка', 'собака', 'мышь']
+
+result = {i: [ord(j) for j in i] for i in words}
+
+print(result)
