@@ -1,0 +1,15 @@
+def print_perm_time_call(msc_time):
+
+    hours, minutes = msc_time.split(":")
+
+    hours = int(hours)
+    minutes = int(minutes)
+    hours += 2
+
+    if hours >= 24:
+        hours -= 24
+
+    print(f"Созвон будет в {hours:02d}:{minutes:02d}.")
+
+
+print_perm_time_call("00:00")
