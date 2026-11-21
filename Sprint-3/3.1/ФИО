@@ -1,0 +1,5 @@
+def print_fio(name, surname, patronymic):
+    print(name, surname, patronymic)
+
+
+print_fio('lexa'.capitalize(), 'tip'.capitalize(), 'man'.capitalize())

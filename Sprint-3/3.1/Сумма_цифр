@@ -1,0 +1,9 @@
+def print_digit_sum1(num):
+    sum_number = 0
+    for number in "123456789":
+        int_number = int(number)
+        sum_number += int_number
+    print(sum_number)
+
+print_digit_sum1('123456789')
+
