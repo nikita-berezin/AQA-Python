@@ -1,0 +1,16 @@
+def add_query_string(url, query):
+
+    end_point = []
+
+    for k, v in query.items():
+        end_point.append(f"{k}={v}")
+
+    result = url + "?" + "&".join(end_point)
+
+    print(result)
+
+
+url = "https://example.com/catalog"
+query = {"category": "books", "limit": 10}
+
+add_query_string(url, query)

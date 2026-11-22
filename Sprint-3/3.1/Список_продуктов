@@ -1,0 +1,35 @@
+def print_product_list(product_list):
+    smile = {
+        "яблоко": "🍎",
+        "хлеб": "🍞",
+        "конфеты": "🍬",
+        "лимон": "🍋",
+        "морковь": "🥕",
+        "огурец": "🥒",
+        "помидор": "🍅",
+        "яйцо": "🥚",
+        "чеснок": "🧄",
+        "авокадо": "🥑",
+        "спички": "🥢",
+        "соль": "🧂",
+        "филе говядины": "🥩",
+        "киви": "🥝",
+        "лук": "🧅",
+        "сыр": "🧀",
+    }
+
+    result = {}
+
+    for item in product_list:
+        result[item] = result.get(item, 0) + 1
+
+    for i, count in result.items():
+        if i in smile:
+            print(f"{smile[i]}: {count}")
+        else:
+            print(f"{i}: {count}")
+
+
+product_list = ["филе говядины", "соль", "филе говядины"]
+
+print_product_list(product_list)

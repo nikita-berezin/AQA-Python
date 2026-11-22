@@ -1,0 +1,17 @@
+def scrabble(letters, word):
+
+    family_letter = list(letters.lower())
+
+    for char in word.lower():
+        if char in family_letter:
+            family_letter.remove(char)
+        else:
+            return False
+
+    return True
+
+
+letters = "кот"
+word = "кит"
+
+print(scrabble(letters, word))

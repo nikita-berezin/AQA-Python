@@ -1,7 +1,5 @@
-def draw_box():
-    for _ in range(5):
-        print("*" * 7)
+text = "banana"
 
+result = {char: {index for index in range(len(text))} for char in text}
 
-draw_box()
-draw_box()
+print(result)

@@ -1,0 +1,25 @@
+accounts = {}
+
+def bank(operation, id, amount):
+
+    if id not in accounts:
+        accounts[id] = 0
+
+    if operation == "top up":
+        accounts[id] += amount
+
+    elif operation == "withdraw":
+        accounts[id] -= amount
+
+    elif operation == "pay":
+        accounts[id] -= amount
+
+    elif operation == "show balance":
+        print(accounts[id])
+
+
+bank("top up", "anna", 500)
+bank("top up", "boris", 200)
+bank("pay", "anna", 150)
+bank("show balance", "boris", None)
+bank("show balance", "anna", None)
