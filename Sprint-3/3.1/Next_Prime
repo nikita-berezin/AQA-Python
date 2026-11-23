@@ -1,0 +1,26 @@
+def is_prime(num):
+
+    if num < 2:
+        return False
+
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+
+
+def get_next_prime(num):
+
+    just_num = num + 1
+
+    while True:
+        if is_prime(just_num):
+            return just_num
+
+        just_num += 1
+
+
+print(get_next_prime(1))
+print(get_next_prime(2))
+print(get_next_prime(3))
+print(get_next_prime(24))

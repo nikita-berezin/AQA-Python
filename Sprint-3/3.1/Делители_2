@@ -1,0 +1,10 @@
+def number_of_factors(num):
+    factors = []
+    for i in range(1, num + 1):
+        if num % i == 0:
+            factors.append(i)
+    return len(factors)
+
+
+print(number_of_factors(16))
+print(number_of_factors(36))

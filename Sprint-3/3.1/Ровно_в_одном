@@ -1,0 +1,18 @@
+def is_one_away(word1, word2):
+
+    if len(word1) != len(word2):
+        return False
+    
+    differences = 0
+    
+    for i in range(len(word1)):
+        if word1[i] != word2[i]:
+            differences += 1
+            
+    return differences == 1
+
+
+print(is_one_away("bike", "hike"))
+print(is_one_away("water", "wafer"))
+print(is_one_away("abcd", "abpo"))
+print(is_one_away("abcd", "abcde"))

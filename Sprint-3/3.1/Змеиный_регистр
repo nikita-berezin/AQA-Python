@@ -1,0 +1,16 @@
+def convert_to_python_case(text):
+
+    result = text[0].lower()
+
+    for char in text[1:]:
+        if char.isupper():
+            result += "_" + char.lower()
+        else:
+            result += char
+
+    return result
+
+
+print(convert_to_python_case("HelloWorld"))
+print(convert_to_python_case("Python"))
+print(convert_to_python_case("MyFirstFunction"))
