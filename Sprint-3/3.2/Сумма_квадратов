@@ -1,0 +1,13 @@
+def sq_sum(*args):
+
+    result = 0
+
+    for i in args:
+        result += i**2
+
+    return result
+
+
+print(sq_sum(1.5, 2))
+print(sq_sum(0, 0))
+print(sq_sum())

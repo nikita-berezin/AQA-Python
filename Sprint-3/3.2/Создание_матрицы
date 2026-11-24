@@ -1,0 +1,19 @@
+def matrix(n=1, m=None, value=0):
+
+    if m is None:
+        m = n
+
+    result = []
+
+    for i in range(n):
+        row = [value] * m
+        result.append(row)
+    return result
+
+
+print(matrix())
+print(matrix(3))
+print(matrix(2, 3))
+print(matrix(3, 2, 7))
+print(matrix(1, 4, -2))
+print(matrix(3, 1, 5))
