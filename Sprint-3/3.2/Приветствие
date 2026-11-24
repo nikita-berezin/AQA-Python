@@ -1,0 +1,13 @@
+def greet(*args):
+
+    names = []
+
+    for i in args:
+        names.append(i)
+
+    return "Hello, " + " and ".join(names) + "!"
+
+
+print(greet("Тимур"))
+print(greet("Тимур", "Анна"))
+print(greet("Alice", "Bob", "Charlie"))
