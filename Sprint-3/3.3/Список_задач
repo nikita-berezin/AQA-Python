@@ -1,0 +1,25 @@
+class TodoList:
+    def __init__(self):
+        self.text = []
+
+    def add_task(self, text):
+        self.text.append(text)
+
+    def remove_task(self, text):
+        if text in self.text:
+            self.text.remove(text)
+            return True
+        else:
+            return False
+
+    def get_tasks(self):
+        return self.text.copy()
+
+
+todo = TodoList()
+todo.add_task("Прочитать урок")
+
+tasks = todo.get_tasks()
+tasks.append("Посторонняя задача")
+
+print(todo.get_tasks())
