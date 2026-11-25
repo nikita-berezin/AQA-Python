@@ -1,0 +1,31 @@
+class EmailNotifier:
+    def __init__(self):
+        pass
+
+    def send(self, message):
+        return f"Email: {message}"
+
+
+class SmsNotifier:
+    def __init__(self):
+        pass
+
+    def send(self, message):
+        return f"SMS: {message}"
+
+
+def notify_all(notifiers, message):
+
+    result = []
+    for notifier in notifiers:
+        result.append(notifier.send(message))
+    return result
+
+
+class ConsoleNotifier:
+    def send(self, message):
+        return f"Console: {message}"
+
+
+print(notify_all([ConsoleNotifier()], "Проверка"))
+print(notify_all([], "Проверка"))

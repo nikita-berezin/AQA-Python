@@ -1,0 +1,52 @@
+class Pickup:
+    def __init__(self):
+        pass
+
+    def calculate(self, subtotal):
+        return 0
+
+
+class CourierDelivery:
+    def __init__(self):
+        pass
+
+    def calculate(self, subtotal):
+        if subtotal < 1000:
+            return 200
+        else:
+            return 0
+
+
+class Order:
+    def __init__(self, delivery):
+        self.delivery = delivery
+        self.items = []
+
+    def add_item(self, price):
+        self.items.append(price)
+
+    def subtotal(self):
+        subtotal_item = 0
+        for item_price in self.items:
+            subtotal_item += item_price
+        return subtotal_item
+
+    def total(self):
+        if not self.items:
+            return 0
+
+        sum_items = self.subtotal()
+        price_delivery = self.delivery.calculate(sum_items)
+        return sum_items + price_delivery
+
+    def set_delivery(self, delivery):
+        self.delivery = delivery
+
+
+first = Order(CourierDelivery())
+second = Order(Pickup())
+
+first.add_item(100)
+
+print(first.total())
+print(second.total())
