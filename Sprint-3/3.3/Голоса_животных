@@ -1,0 +1,33 @@
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        return "Неизвестный звук"
+
+
+class Cat(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def speak(self):
+        return "Мяу"
+
+
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def speak(self):
+        return "Гав"
+
+
+def collect_voices(animals):
+    result = []
+    for animal in animals:
+        voice = f"{animal.name}: {animal.speak()}"
+        result.append(voice)
+    return result
+
+
+print(collect_voices([]))
